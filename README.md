@@ -40,3 +40,9 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 -   [x] function type
 -   [x] arrow function
 -   [x] template literals
+
+## M005 | [MODULE & SCOPES](https://www.typescriptlang.org/docs/handbook/modules/theory.html)
+
+-   [ ] CommonJS, ES Modules
+-   [ ] Scopes, var, let, const
+-   [ ] ambients, [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#handbook-content)
