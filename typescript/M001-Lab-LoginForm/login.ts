@@ -4,7 +4,7 @@ Jedes Passwort wird erstmal akzeptiert.
 Viel Erfolg!
 */
 function login(u: string) {
-    return "Hello" + u;
+  let user: string = (<HTMLInputElement>document.getElementById("user")!).value;
+  document.getElementById("hi")!.textContent = login(user);
+  return "Hello" + u;
 }
-let user: string = (<HTMLInputElement> document.getElementById('user')!).value;
-document.getElementById('hi')!.textContent = login(user);
