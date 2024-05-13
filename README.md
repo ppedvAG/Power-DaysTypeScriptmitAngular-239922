@@ -31,3 +31,12 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 -   [x] type aliases
 -   [x] tuples
 -   [x] enums
+
+## M003 | TYPE [NARROWING](https://www.typescriptlang.org/docs/handbook/2/narrowing.html)
+
+-   [x] any, void, unknown, never
+-   [x] typeof, instanceof, in, keyof
+-   [x] type casting, assertion
+-   [x] function type
+-   [x] arrow function
+-   [x] template literals
