@@ -1,2 +1,24 @@
-# Power-DaysTypeScriptmitAngular-239922
-KursRepository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
+# Power-Days TypeScript mit Angular
+
+Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
+
+## M000 | VORSTELLUNG
+
+- [x] [Visual Studio Code](https://code.visualstudio.com/)
+- [x] [vsc-shortcuts.md](SHORTCUTS-VSCODE.md)
+- [x] [textEditorShortcuts.md](SHORTCUTS-EDITOR.md)
+
+## M001 | [GRUNDLAGEN](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
+
+- [x] VS Code
+- [x] node & [npm](https://www.npmjs.com/)
+- [x] tsc, Greeter
+- [x] Lab: LoginForm
+
+<!-- LAB
+  # Aufgabe 'login form'
+
+  Erstellen Sie eine Mini-Anwendung, die nach einem Benutzernamen und nach einem Passwort fragt und dann den Benutzer begrüßt.
+  Jedes Passwort wird erstmal akzeptiert.
+  Viel Erfolg!
+-->
