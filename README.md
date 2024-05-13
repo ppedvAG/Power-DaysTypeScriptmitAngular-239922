@@ -4,16 +4,16 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 
 ## M000 | VORSTELLUNG
 
-- [x] [Visual Studio Code](https://code.visualstudio.com/)
-- [x] [vsc-shortcuts.md](SHORTCUTS-VSCODE.md)
-- [x] [textEditorShortcuts.md](SHORTCUTS-EDITOR.md)
+-   [x] [Visual Studio Code](https://code.visualstudio.com/)
+-   [x] [vsc-shortcuts.md](SHORTCUTS-VSCODE.md)
+-   [x] [textEditorShortcuts.md](SHORTCUTS-EDITOR.md)
 
 ## M001 | [GRUNDLAGEN](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
 
-- [x] VS Code
-- [x] node & [npm](https://www.npmjs.com/)
-- [x] tsc, Greeter
-- [x] Lab: LoginForm
+-   [x] VS Code
+-   [x] node & [npm](https://www.npmjs.com/)
+-   [x] tsc, Greeter
+-   [x] Lab: LoginForm
 
 <!-- LAB
   # Aufgabe 'login form'
@@ -22,3 +22,12 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
   Jedes Passwort wird erstmal akzeptiert.
   Viel Erfolg!
 -->
+
+## M002 | [TYPESYSTEM](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+
+-   [x] primitives, null, undefined
+-   [x] object, arrays
+-   [x] union type
+-   [x] type aliases
+-   [x] tuples
+-   [x] enums
