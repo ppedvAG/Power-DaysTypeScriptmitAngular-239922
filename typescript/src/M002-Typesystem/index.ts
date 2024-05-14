@@ -84,6 +84,13 @@ console.log('typeof variable myArray is', typeof myArray); // gibt object aus
 console.log('is myArray an array?', Array.isArray(myArray)); // gibt true aus
 console.log('is secondPerson an array?', Array.isArray(secondPerson)); // gibt false aus
 
+// Arrays sind auch Objekte mit der Besonderheit, dass der key eine aufsteigende Nummer ist statt einem custom string
+const arrayLikeObject = {
+    0: 'a',
+    1: 'b',
+    2: 'c',
+};
+
 const mixedArray: Array<unknown> = [42, 'number', false];
 console.log('typeof variable of first item in mixedArray is', typeof mixedArray[0]); // gibt number aus
 delete mixedArray[0];

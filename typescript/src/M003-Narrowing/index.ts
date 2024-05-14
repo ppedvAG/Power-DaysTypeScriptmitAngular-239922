@@ -50,11 +50,11 @@ let someNumberAsString = '0';
 // let num0 = <number>someNumberAsString; // geht nicht, weil Type Assertion und kein Casting!
 let num1 = Number(someNumberAsString); // Casting zu number
 let num2 = parseInt(someNumberAsString); // Casting zu number
-let num_short = +someNumberAsString; // Casting zu number (shortcut)
+let num_short = +someNumberAsString; // Casting zu number (shortcut: plus Operator)
 console.log('converted to num', num1, typeof num1);
 
 let bool = Boolean(num2); // Casting zu einem boolean
-let bool_short = !num_short; // Casting zu einem boolean (shortcut)
+let bool_short = !!num_short; // Casting zu einem boolean (shortcut: doppelte Negierung)
 console.log('converted to boolean', bool, typeof bool);
 
 let newString = String(bool);

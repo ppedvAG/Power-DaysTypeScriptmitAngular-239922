@@ -43,6 +43,11 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 
 ## M005 | [MODULE & SCOPES](https://www.typescriptlang.org/docs/handbook/modules/theory.html)
 
--   [ ] CommonJS, ES Modules
--   [ ] Scopes, var, let, const
--   [ ] ambients, [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#handbook-content)
+-   [x] CommonJS, ES Modules
+-   [x] Scopes, var, let, const
+-   [x] ambients, [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#handbook-content)
+
+## M007 | GENERICS & UTILITY TYPES
+
+-   [ ] Generics
+-   [ ] Utility Types
