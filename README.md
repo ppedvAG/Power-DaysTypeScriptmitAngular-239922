@@ -49,5 +49,25 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 
 ## M007 | GENERICS & UTILITY TYPES
 
--   [ ] Generics
--   [ ] Utility Types
+-   [x] Generics
+-   [x] Utility Types
+
+## M006 | ECMAScript
+
+-   [x] Destructuring assignment
+-   [ ] Iterators, Generators
+-   [x] Promises, async/await
+-   [x] Lab: fetch Todo-Liste
+
+<!-- LAB
+  Holen Sie von der Seite http://jsonplaceholder.typicode.com/
+  alle Todos mit dem Code
+
+  fetch('https://jsonplaceholder.typicode.com/todos')
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+  Die geholten Daten müssen einem Array mit Elementen von einem vorgegebenen Interfacetyp entsprechen.
+
+  Geben Sie die Titel der Todos in einer Liste aus.
+-->
