@@ -13,6 +13,7 @@ function getBookDetails(): BookDetails {
 
 // Evolutionsschritt 1: Callback functions
 // ---------------------------------------
+
 // Häufiges Konstrukt in der Praxis sind Callback functions
 const callback = () => (bookFromServer = getBookDetails());
 
@@ -86,3 +87,6 @@ async function fetchBooksAsync(shouldWork = true): Promise<void> {
 
 fetchBooksAsync();
 fetchBooksAsync(false);
+
+// Evolutionsschritt 4: Data-Streams mit Observables von RxJS: https://www.npmjs.com/package/rxjs
+// Wird bei Data-bindings in angular verwendet bzw. Signals ab Angular 17
