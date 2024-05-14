@@ -109,3 +109,10 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
   Schreiben Sie danach eine neue Methode, welche als Parameter zwei Transportmittelobjekte übernimmt und
   nach Prüfung der Interfaces entweder ein Objekt auf das andere belädt oder eine Fehlermeldung ausgibt.
 -->
+
+## M101 | [GETTING STARTED](https://angular.io/guide/setup-local)
+
+-   [x] ng cli
+-   [x] vscode extensions
+-   [x] project structure
+-   [x] ecosystem
