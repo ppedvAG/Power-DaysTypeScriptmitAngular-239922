@@ -116,3 +116,9 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 -   [x] vscode extensions
 -   [x] project structure
 -   [x] ecosystem
+
+## M102 | [NG MODULES](https://angular.io/guide/understanding-angular-overview)
+
+-   [ ] ng modules
+-   [ ] demo-modul + photos-modul
+-   [ ] Lab: todo-module
