@@ -119,6 +119,26 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 
 ## M102 | [NG MODULES](https://angular.io/guide/understanding-angular-overview)
 
--   [ ] ng modules
--   [ ] demo-modul + photos-modul
--   [ ] Lab: todo-module
+-   [x] ng modules
+-   [x] demo-modul + photos-modul
+-   [x] Lab: todo-module
+
+## M103 | [COMPONENTS](https://angular.io/guide/component-overview)
+
+-   [x] component template, selector, import
+-   [x] demo-modul/time
+-   [x] demo-modul/card
+-   [x] Lab: [photos-modul/rating](M-003-Components/photos-modul/rating/rating.component.html)
+-   [ ] class fields / props
+-   [ ] lifecycle: ngOnInit, ngOnChange, ngAfterViewInit
+-   [ ] Lab: todo-module/overview
+
+<!-- LAB
+  in photos-modul eine komponente rating
+  mit zwei Props Input-starsNumber & starsString
+
+  starsString = '*'.repeat(starsNumber);
+
+  photos-modul hat auch eine Overview-Komponente
+  rating-Komponente wird über Overview gerendert
+-->
