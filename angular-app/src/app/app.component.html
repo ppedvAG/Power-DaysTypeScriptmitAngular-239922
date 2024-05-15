@@ -37,13 +37,21 @@
         padding: 1rem;
         box-sizing: inherit;
     }
+
+    main .content {
+        display: flex;
+        justify-content: space-between;
+    }
 </style>
 
 <main class="main">
     <h1>Hello, {{ title }}</h1>
     <p>Congratulations! Your app is running. 🎉</p>
 
-    <app-demo-overview />
+    <div class="content">
+        <app-demo-overview />
+        <app-photos-overview />
+    </div>
 </main>
 
 <router-outlet />
