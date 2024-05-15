@@ -4,5 +4,5 @@
 
 <button (click)="increment()">Count: {{ count }}</button>
 <ng-container *ngIf="count > 8; else okayTemplate">
-    <span class="warning">Vorsicht: Limit fast erreicht </span>
+    <span [ngClass]="{ warning: count > 8, danger: count > 10 }">Vorsicht: Limit fast erreicht </span>
 </ng-container>

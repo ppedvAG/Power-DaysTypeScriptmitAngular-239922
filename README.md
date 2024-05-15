@@ -129,9 +129,8 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 -   [x] demo-modul/time
 -   [x] demo-modul/card
 -   [x] Lab: [photos-modul/rating](M-003-Components/photos-modul/rating/rating.component.html)
--   [ ] class fields / props
--   [ ] lifecycle: ngOnInit, ngOnChange, ngAfterViewInit
--   [ ] Lab: todo-module/overview
+-   [x] class fields / props
+-   [x] lifecycle: ngOnInit, ngOnChange, ngAfterViewInit
 
 <!-- LAB
   in photos-modul eine komponente rating
@@ -142,3 +141,24 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
   photos-modul hat auch eine Overview-Komponente
   rating-Komponente wird über Overview gerendert
 -->
+
+## M104 | [TEMPLATES]
+
+-   [x] Counter component
+    -   mit @Output() limitReached
+    -   (click) Event verwendet
+    -   \*ngIf Direktive fuer Warning und Okay-Template
+-   [x] Todo Component
+    -   Page Lifecycle ngOnInit fuer asynchrones Laden der Web-Ressource via API
+    -   ng-content mit Selektor um spezifischem Element Inhalt zu uebergeben
+    -   Verwendung von Standard-Pipes: uppercase und percent mit argument
+    -   \*ngFor Direktive um Liste von Todos als Liste darzustellen
+    -   Verwendung von #TemplateReferenceVariable
+    -   [ngClass] Direktive fuer bedingte Formattierung mit css Klassen
+-   [x] Lab: app-home-away component mit \*ngIf Direktive und Standard Events
+
+## M106 | [SERVICES]
+
+-   [x] Separation of Concerns
+-   [x] Logik aus Todo component in Service verschieben
+-   [x] Dependency Injection

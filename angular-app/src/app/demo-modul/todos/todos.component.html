@@ -6,7 +6,7 @@
         <div>
             <input type="checkbox" [checked]="todo.completed" (change)="toggle(todo)" />
             <strong [ngClass]="{ done: todo.completed }"> Todo {{ todo.title | uppercase }}</strong>
-            <span> ({{ todo.id }})</span>
+            <button (click)="edit(todo)">🖊️ ({{ todo.id }})</button>
         </div>
     </li>
 </ul>

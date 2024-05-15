@@ -6,3 +6,13 @@ ul {
     text-decoration: line-through;
     color: gray;
 }
+
+button {
+    margin: 1rem 0;
+}
+
+input {
+    margin: inherit;
+    padding: .3rem .5rem;
+    font-size: inherit;
+}
