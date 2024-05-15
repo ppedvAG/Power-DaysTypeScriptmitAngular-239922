@@ -6,17 +6,23 @@ import { Todo } from '../demo-modul/models/todo.model';
 })
 export class TodosService {
     readonly url = 'https://jsonplaceholder.typicode.com/todos';
+    todoList: Todo[] = [];
 
     constructor() {}
 
     async fetchTodoList(): Promise<Todo[]> {
-        return fetch(this.url)
-            .then((response) => response.json())
-            .catch((error) => console.error(error));
+        if (this.todoList.length < 1) {
+            const list = await fetch(this.url)
+                .then((response) => response.json())
+                .catch((error) => console.error(error));
+            this.todoList = list.splice(0, 21);
+        }
+        return this.todoList;
     }
 
     async commitTodoItem(item: Todo) {
         // sende an server
+        this.todoList.push(item);
     }
 
     async updateTodoItem(id: string, item: Partial<Todo>) {

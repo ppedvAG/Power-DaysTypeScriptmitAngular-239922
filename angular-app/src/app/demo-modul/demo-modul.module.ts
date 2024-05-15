@@ -4,12 +4,26 @@ import { DemoOverviewComponent } from './demo-overview/demo-overview.component';
 import { TimeComponent } from './time/time.component';
 import { CardComponent } from './card/card.component';
 import { CounterComponent } from './counter/counter.component';
-import { TodosComponent } from './todos/todos.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 import { HomeAwayComponent } from './home-away/home-away.component';
+import { ErrorComponent } from './error/error.component';
+import { NavigationHeaderComponent } from './navigation-header/navigation-header.component';
+import { RouterModule } from '@angular/router';
+import { TodoAddComponent } from './todo-add/todo-add.component';
 
 @NgModule({
-    declarations: [DemoOverviewComponent, TimeComponent, CardComponent, CounterComponent, TodosComponent, HomeAwayComponent],
-    imports: [CommonModule],
-    exports: [DemoOverviewComponent],
+    declarations: [
+        DemoOverviewComponent,
+        TimeComponent,
+        CardComponent,
+        CounterComponent,
+        TodoListComponent,
+        HomeAwayComponent,
+        ErrorComponent,
+        NavigationHeaderComponent,
+        TodoAddComponent,
+    ],
+    imports: [CommonModule, RouterModule],
+    exports: [DemoOverviewComponent, TodoListComponent, TodoAddComponent, NavigationHeaderComponent, ErrorComponent],
 })
 export class DemoModulModule {}

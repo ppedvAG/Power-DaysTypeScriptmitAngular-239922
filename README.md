@@ -162,3 +162,12 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 -   [x] Separation of Concerns
 -   [x] Logik aus Todo component in Service verschieben
 -   [x] Dependency Injection
+
+## M107 | [ROUTING](https://angular.io/guide/routing-overview)
+
+-   [x] RoutingModule & RouterModule [routing.module.ts]
+-   [x] Routes & Route [routing.module.ts]
+-   [x] Paths, Endpoints, Redirections [routing.module.ts]
+-   [x] router-outlet & [routerLink]
+-   [x] Hinzufuegen neuer Aufgaben in eigene Komponent verlagert
+-   [x]

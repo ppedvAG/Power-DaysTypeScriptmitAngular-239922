@@ -1,5 +1,8 @@
 <h2>Todo List</h2>
 <ng-content select="[header]"></ng-content>
+<p>
+    <a role="button" [routerLink]="['/todos', currentId]">Neue Aufgabe</a>
+</p>
 <div>Fertige Aufgaben: {{ percentDone | percent : '1.2' }}</div>
 <ul>
     <li *ngFor="let todo of todoList">
@@ -10,7 +13,3 @@
         </div>
     </li>
 </ul>
-<div>
-    <label>Todo: </label>
-    <input type="text" #inputRef (keyup.enter)="addTodo(inputRef.value)" placeholder="Enter todo" />
-</div>

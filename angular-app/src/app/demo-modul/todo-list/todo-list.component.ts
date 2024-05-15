@@ -3,11 +3,11 @@ import { Todo } from '../models/todo.model';
 import { TodosService } from '../../services/todos.service';
 
 @Component({
-    selector: 'app-todos',
-    templateUrl: './todos.component.html',
-    styleUrl: './todos.component.css',
+    selector: 'app-todo-list',
+    templateUrl: './todo-list.component.html',
+    styleUrl: './todo-list.component.css',
 })
-export class TodosComponent implements OnInit, AfterViewInit {
+export class TodoListComponent implements OnInit, AfterViewInit {
     todoList: Todo[] = [];
     currentId = 0;
 
@@ -16,9 +16,8 @@ export class TodosComponent implements OnInit, AfterViewInit {
     constructor(private service: TodosService) {}
 
     async ngOnInit(): Promise<void> {
-        const list = await this.service.fetchTodoList();
-        this.todoList = list.splice(0, 21);
-        this.currentId = this.todoList.length;
+        this.todoList = await this.service.fetchTodoList();
+        this.currentId = this.todoList.length + 1;
     }
 
     ngAfterViewInit(): void {
@@ -38,18 +37,5 @@ export class TodosComponent implements OnInit, AfterViewInit {
     edit(todo: Todo) {
         this.inputRef.nativeElement.value = todo.title;
         this.inputRef.nativeElement.focus();
-    }
-
-    async addTodo(value: string) {
-        const todo = {
-            id: `${++this.currentId}`,
-            title: value,
-            completed: false,
-        };
-        await this.service.commitTodoItem(todo);
-
-        // push fuegt Element an letzter Stelle hinzu,
-        // unshift fuegt Element an erster Stelle hinzu
-        this.todoList.push(todo);
     }
 }
