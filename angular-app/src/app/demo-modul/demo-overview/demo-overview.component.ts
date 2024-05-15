@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
     templateUrl: './demo-overview.component.html',
     styleUrls: ['./demo-overview.component.css'],
 })
-export class DemoOverviewComponent {}
+export class DemoOverviewComponent {
+    limitColor = 'black';
+
+    checkForLimit() {
+        this.limitColor = 'red';
+    }
+}

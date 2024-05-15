@@ -1,6 +1,9 @@
 <h2>Uhrzeit</h2>
 <app-time></app-time>
 
+<h2 [style.color]="limitColor">Counter</h2>
+<app-counter (limitReached)="checkForLimit()" />
+
 <h2>Cards</h2>
 <app-card type="herz" value="K" />
 <app-card type="pik" value="D" />
