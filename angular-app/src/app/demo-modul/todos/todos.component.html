@@ -1,0 +1,16 @@
+<h2>Todo List</h2>
+<ng-content select="[header]"></ng-content>
+<div>Fertige Aufgaben: {{ percentDone | percent : '1.2' }}</div>
+<ul>
+    <li *ngFor="let todo of todoList">
+        <div>
+            <input type="checkbox" [checked]="todo.completed" (change)="toggle(todo)" />
+            <strong [ngClass]="{ done: todo.completed }"> Todo {{ todo.title | uppercase }}</strong>
+            <span> ({{ todo.id }})</span>
+        </div>
+    </li>
+</ul>
+<div>
+    <label>Todo: </label>
+    <input type="text" #inputRef (keyup.enter)="addTodo(inputRef.value)" placeholder="Enter todo" />
+</div>

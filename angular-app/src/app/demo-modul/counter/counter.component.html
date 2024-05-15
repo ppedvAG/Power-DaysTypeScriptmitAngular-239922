@@ -1,0 +1,8 @@
+<ng-template #okayTemplate>
+    <span class="okay"> Alles im grünen Bereich </span>
+</ng-template>
+
+<button (click)="increment()">Count: {{ count }}</button>
+<ng-container *ngIf="count > 8; else okayTemplate">
+    <span class="warning">Vorsicht: Limit fast erreicht </span>
+</ng-container>

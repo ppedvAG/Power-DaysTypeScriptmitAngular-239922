@@ -2,8 +2,12 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
     selector: 'app-counter',
-    template: `<button (click)="increment()">Count: {{ output }}</button> `,
-    styles: `button { padding: 1rem 2rem }`,
+    templateUrl: 'counter.component.html',
+    styles: `
+    button { padding: 1rem 2rem }
+    .warning { color: orange; }
+    .okay { color: green; }
+    `,
 })
 export class CounterComponent {
     count = 0;
