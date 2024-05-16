@@ -9,6 +9,6 @@ export class RatingComponent {
     @Input() stars = 0;
 
     get starsString() {
-        return '*'.repeat(this.stars);
+        return '⭐'.repeat(this.stars);
     }
 }

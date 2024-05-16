@@ -1,0 +1,17 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.item {
+    align-content: center;
+}
+
+.loading {
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}

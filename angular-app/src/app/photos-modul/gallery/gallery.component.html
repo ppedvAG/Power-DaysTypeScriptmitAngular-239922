@@ -1,0 +1,5 @@
+<ng-template #loading> <div class="loading">Galerie wird geladen...</div> </ng-template>
+
+<div id="container" *ngIf="photoList.length !== 0; else loading">
+    <app-photo *ngFor="let item of photoList" [photo]="item" class="item"></app-photo>
+</div>

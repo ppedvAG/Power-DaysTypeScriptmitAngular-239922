@@ -162,6 +162,28 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 -   [x] Separation of Concerns
 -   [x] Logik aus Todo component in Service verschieben
 -   [x] Dependency Injection
+-   [x] Lab: Photo Gallery
+
+<!-- LAB
+  1. Einen Photo-Service anlegen welcher die Daten von folgender Adresse holt: 'https://jsonplaceholder.typicode.com/photos/';
+
+  2. In photos-modul eine Komponente Gallery anlegen.
+  Die Gallery Component soll in einem Grid die ersten 12 Photos anzeigen.
+
+  CSS fuer gallery.component.css
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .photoItem {
+    align-content: center;
+  }
+
+  (Fuer die Darstellung des Fotos: <img src="imageUrl.jpg">)
+
+  3. In photos-modul eine Komponent Photo anlegen und den HTML-Code aus Gallery dort darstellen (Seperation of concerns)
+
+-->
 
 ## M107 | [ROUTING](https://angular.io/guide/routing-overview)
 
