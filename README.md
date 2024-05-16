@@ -170,4 +170,6 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 -   [x] Paths, Endpoints, Redirections [routing.module.ts]
 -   [x] router-outlet & [routerLink]
 -   [x] Hinzufuegen neuer Aufgaben in eigene Komponent verlagert
--   [x]
+-   [x] Navigation-Header Komponente mit Router Links hinzugefuegt
+-   [x] 404: Error Komponente wenn Seiten nicht gefunden werden
+-   [x] Routing Guard: CanActivate welcher auf eine Seite umleitet

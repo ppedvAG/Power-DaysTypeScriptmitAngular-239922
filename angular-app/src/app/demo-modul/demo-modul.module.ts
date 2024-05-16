@@ -10,6 +10,7 @@ import { ErrorComponent } from './error/error.component';
 import { NavigationHeaderComponent } from './navigation-header/navigation-header.component';
 import { RouterModule } from '@angular/router';
 import { TodoAddComponent } from './todo-add/todo-add.component';
+import { PaywallComponent } from './paywall/paywall.component';
 
 @NgModule({
     declarations: [
@@ -22,8 +23,16 @@ import { TodoAddComponent } from './todo-add/todo-add.component';
         ErrorComponent,
         NavigationHeaderComponent,
         TodoAddComponent,
+        PaywallComponent,
     ],
     imports: [CommonModule, RouterModule],
-    exports: [DemoOverviewComponent, TodoListComponent, TodoAddComponent, NavigationHeaderComponent, ErrorComponent],
+    exports: [
+        DemoOverviewComponent,
+        TodoListComponent,
+        TodoAddComponent,
+        NavigationHeaderComponent,
+        PaywallComponent,
+        ErrorComponent,
+    ],
 })
 export class DemoModulModule {}
