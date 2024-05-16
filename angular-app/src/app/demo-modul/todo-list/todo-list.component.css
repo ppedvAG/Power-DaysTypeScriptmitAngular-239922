@@ -2,12 +2,16 @@ ul {
     list-style: none;
 }
 
+.item {
+    padding: .3rem 0;
+}
+
 .done {
     text-decoration: line-through;
     color: gray;
 }
 
-button {
+a[role=button] {
     margin: 1rem 0;
 }
 

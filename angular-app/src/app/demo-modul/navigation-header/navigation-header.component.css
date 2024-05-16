@@ -9,12 +9,3 @@ ul li {
 li::after {
     content: '|';
 }
-
-a {
-    padding: 0 4px;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}

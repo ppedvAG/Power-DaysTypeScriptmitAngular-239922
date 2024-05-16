@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Todo } from '../models/todo.model';
 import { TodosService } from '../../services/todos.service';
 
@@ -7,22 +7,15 @@ import { TodosService } from '../../services/todos.service';
     templateUrl: './todo-list.component.html',
     styleUrl: './todo-list.component.css',
 })
-export class TodoListComponent implements OnInit, AfterViewInit {
+export class TodoListComponent implements OnInit {
     todoList: Todo[] = [];
     currentId = 0;
-
-    @ViewChild('inputRef') inputRef!: ElementRef<HTMLInputElement>;
 
     constructor(private service: TodosService) {}
 
     async ngOnInit(): Promise<void> {
         this.todoList = await this.service.fetchTodoList();
         this.currentId = this.todoList.length + 1;
-    }
-
-    ngAfterViewInit(): void {
-        // Hier koennen wir auf inputRef zugreifen. Davor ist inputRef === undefined!
-        this.inputRef.nativeElement.style.borderColor = 'lavender';
     }
 
     get percentDone() {
@@ -32,10 +25,5 @@ export class TodoListComponent implements OnInit, AfterViewInit {
 
     toggle(todo: Todo) {
         todo.completed = !todo.completed;
-    }
-
-    edit(todo: Todo) {
-        this.inputRef.nativeElement.value = todo.title;
-        this.inputRef.nativeElement.focus();
     }
 }

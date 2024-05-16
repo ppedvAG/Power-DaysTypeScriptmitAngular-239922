@@ -8,8 +8,9 @@ import { TodoListComponent } from './todo-list/todo-list.component';
 import { HomeAwayComponent } from './home-away/home-away.component';
 import { ErrorComponent } from './error/error.component';
 import { NavigationHeaderComponent } from './navigation-header/navigation-header.component';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { TodoAddComponent } from './todo-add/todo-add.component';
+import { TodoEditComponent } from './todo-edit/todo-edit.component';
 import { PaywallComponent } from './paywall/paywall.component';
 
 @NgModule({
@@ -22,14 +23,14 @@ import { PaywallComponent } from './paywall/paywall.component';
         HomeAwayComponent,
         ErrorComponent,
         NavigationHeaderComponent,
-        TodoAddComponent,
+        TodoEditComponent,
         PaywallComponent,
     ],
-    imports: [CommonModule, RouterModule],
+    imports: [CommonModule, RouterModule, FormsModule],
     exports: [
         DemoOverviewComponent,
         TodoListComponent,
-        TodoAddComponent,
+        TodoEditComponent,
         NavigationHeaderComponent,
         PaywallComponent,
         ErrorComponent,

@@ -1,0 +1,9 @@
+<div>
+    <h2>
+        Aufgabe
+        <span *ngIf="!currentTodo">hinzufügen</span>
+        <span *ngIf="currentTodo">bearbeiten</span>
+    </h2>
+    <input type="text" #inputRef placeholder="Enter todo" />
+    <input type="submit" (click)="submit(inputRef.value)" />
+</div>

@@ -20,16 +20,24 @@ export class TodosService {
         return this.todoList;
     }
 
+    getTodoItem(id: number): Todo | null {
+        if (this.todoList[id]) {
+            return this.todoList[id];
+        }
+        return null;
+    }
+
     async commitTodoItem(item: Todo) {
-        // sende an server
+        // TODO sende an server
         this.todoList.push(item);
     }
 
-    async updateTodoItem(id: string, item: Partial<Todo>) {
-        // aktualisiere ein Item auf server
+    async updateTodoItem(id: number, item: Todo) {
+        // TODO aktualisiere ein Item auf server
+        this.todoList[id] = item;
     }
 
-    async deleteTodoItem(id: string) {
+    async deleteTodoItem(id: number) {
         // loesche Todo Item
     }
 }
