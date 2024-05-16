@@ -198,13 +198,25 @@ Kurs Repository zu Kurs Power-Days: TypeScript mit Angular der ppedv AG
 
 ## M108 | [FORMS](https://angular.io/guide/forms-overview)
 
--   [ ] FormsModule
--   [ ] Reactive-Forms mit ngForm
-    -   [ ] demo ngform
--   [ ] Template-Driven Forms mit ngModel
-    -   [ ] two way data binding [(ngModel)]
--   [ ] Lab: login form
+-   [x] FormsModule
+-   [x] Reactive-Forms mit FormBuilder
+    -   todo-edit.component
+-   [x] Template-Driven Forms mit ngModel und ngForm
+    -   two way data binding [(ngModel)]
+    -   login form
 
 <!-- LAB
 
 -->
+
+## M109 | ASYNC CODING
+
+-   [x] rxjs & observables
+-   [x] [HttpClienModule](https://angular.io/guide/understanding-communicating-with-http)
+
+## M110 | DEBUGING UND FEHLERSUCHE
+
+-   [x] Chrome DevTools F12
+-   [x] Debugging mit Breakpoints
+-   [x] Fiddler
+-   [x] Angular DevTools Extension

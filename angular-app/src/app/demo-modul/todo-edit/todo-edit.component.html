@@ -1,9 +1,29 @@
-<div>
+<form *ngIf="editForm" [formGroup]="editForm" (ngSubmit)="submit()">
     <h2>
         Aufgabe
         <span *ngIf="!currentTodo">hinzufügen</span>
         <span *ngIf="currentTodo">bearbeiten</span>
     </h2>
-    <input type="text" #inputRef placeholder="Enter todo" />
-    <input type="submit" (click)="submit(inputRef.value)" />
-</div>
+    <div class="control">
+        <label>Aufgabe*</label>
+        <input id="title" formControlName="title" type="text" placeholder="Enter todo" />
+    </div>
+    <div class="control">
+        <label>Beschreibung</label>
+        <textarea id="description" formControlName="description" placeholder="Beschreibung"> </textarea>
+    </div>
+    <div class="control">
+        <label>Überfällig</label>
+        <input id="duedate" formControlName="duedate" type="date" />
+    </div>
+    <div formArrayName="labels">
+        <label>Labels</label>
+        <button (click)="addLabel()">+</button>
+        <div *ngFor="let label of labels.controls; let i = index" class="control">
+            <input id="label-{{ i }}" type="text" [formControlName]="i" />
+        </div>
+    </div>
+    <p>
+        <input type="submit" [disabled]="!editForm.valid" />
+    </p>
+</form>
